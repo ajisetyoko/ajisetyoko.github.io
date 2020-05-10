@@ -1,3 +1,13 @@
+/**
+ * @Author: ajisetyoko <simslab-cs>
+ * @Date:   2020-02-28T15:30:39+08:00
+ * @Email:  aji.setyoko.second@gmail.com
+ * @Last modified by:   simslab-cs
+ * @Last modified time: 2020-05-10T22:15:47+08:00
+ */
+
+
+
 @media (max-width: 1199px){
     .about_person_area .person_img {
         max-width: none;
@@ -28,7 +38,7 @@
     .education_area .education_inner_area .education_item:nth-child(2n)::after {
         left: -21px;
     }
-    .blog_slider_area, .instagram_area {
+    .blog_slider_area,.blog2_slider_area, .instagram_area {
         min-height: 516px;
     }
     .footer_copyright .pull-right .navbar-nav li {
@@ -62,13 +72,19 @@
         max-width: 315px;
         margin: auto;
     }
+    .blog2_slider_area {
+        margin: 20px 0px;
+    }
+    .blog2_slider_area, .instagram_area {
+        min-height: 420px;
+    }
     .blog_slider_area {
         margin: 20px 0px;
     }
     .blog_slider_area, .instagram_area {
         min-height: 420px;
     }
-    .contact_area .contact_from_area{ 
+    .contact_area .contact_from_area{
         margin-top: 40px;
     }
     .footer_copyright .pull-left{
@@ -135,7 +151,7 @@
     }
     .education_area .education_inner_area .education_item {
         width: 49%;
-        max-width: none; 
+        max-width: none;
     }
 }
 @media (max-width: 600px){
@@ -175,7 +191,7 @@
         width: 110%;
     }
     .education_area .education_inner_area .education_item:nth-child(2n)::after {
-         left: auto; 
+         left: auto;
     }
     .education_area .education_inner_area .education_item::after {
         display: none;

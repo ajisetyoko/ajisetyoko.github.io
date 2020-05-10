@@ -35,6 +35,15 @@
 .twitter_area ul li a {
 	color: #27a79a;
 }
+.blog2_slider_area .owl-prev:hover {
+	color: #27a79a;
+}
+.blog2_slider_area .owl-next:hover {
+	color: #27a79a;
+}
+.blog2_slider_area .blog_slider_inner .item h5 a {
+	color: #27a79a;
+}
 .blog_slider_area .owl-prev:hover {
 	color: #27a79a;
 }

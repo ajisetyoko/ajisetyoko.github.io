@@ -91,6 +91,22 @@
         }
     }
     blog_slider();
+
+    function blog2_slider(){
+        if ( $('.blog2_slider_inner').length ){
+            $('.blog2_slider_inner').owlCarousel({
+                loop: true,
+                margin: 0,
+                nav: true,
+                items: 1,
+                autoplay: false,
+                smartSpeed: 1500,
+                navContainer: '.blog2_slider_area',
+                navText: ['<i class="fa fa-long-arrow-left" aria-hidden="true"></i>','<i class="fa fa-long-arrow-right" aria-hidden="true"></i>']
+            });
+        }
+    }
+    blog2_slider();
     
     
     
