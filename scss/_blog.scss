@@ -1,10 +1,18 @@
+// @Author: ajisetyoko <simslab-cs>
+// @Date:   2020-02-28T15:30:39+08:00
+// @Email:  aji.setyoko.second@gmail.com
+// @Last modified by:   simslab-cs
+// @Last modified time: 2020-05-10T22:13:43+08:00
+
+
+
 /* News area css
 ============================================================================================ */
 .news_area{
-    
+
 }
 .news_inner_area{
-    
+
 }
 .twitter_area{
     background: #fff;
@@ -90,6 +98,73 @@
         overflow: hidden;
     }
 }
+
+.blog2_slider_area{
+    background: #fff;
+    padding: 0px 15px;
+    position: relative;
+    min-height: 100px;
+    .blog2_slider_inner{
+        .item{
+            h3{
+                font-size: 14px;
+                color: $pfont;
+                font-weight: bold;
+                font-family: $ral;
+                text-transform: uppercase;
+                padding: 25px 0px 10px 0px;
+            }
+            p{
+                font-family: $ral;
+                font-size: 14px;
+                line-height: 24px;
+                color: $gray;
+                padding-bottom: 10px;
+                a{
+                    color: $pfont;
+                }
+            }
+            h5{
+                font-family: $ral;
+                font-size: 14px;
+                line-height: 24px;
+                color: $gray;
+                font-weight: normal;
+                padding-bottom: 14px;
+                a{
+                    color: $baseColor;
+                }
+            }
+        }
+    }
+    .owl-prev{
+        position: absolute;
+        left: 15px;
+        top: 27px;
+        font-size: 18px;
+        color: $gray;
+        @include transition;
+        cursor: pointer;
+        z-index: 3;
+        &:hover{
+            color: $baseColor;
+        }
+    }
+    .owl-next{
+        position: absolute;
+        right: 15px;
+        top: 27px;
+        font-size: 18px;
+        color: $gray;
+        @include transition;
+        cursor: pointer;
+        z-index: 3;
+        &:hover{
+            color: $baseColor;
+        }
+    }
+}
+
 .blog_slider_area{
     background: #fff;
     padding: 0px 15px;
@@ -157,7 +232,7 @@
 }
 
 .contact_area{
-    
+
 }
 .contact_title{
     h3{
@@ -223,7 +298,7 @@
 }
 .contact_from_area{
     .form-group{
-        margin-bottom: 20px;   
+        margin-bottom: 20px;
         input{
             width: 100%;
             box-shadow: none;
@@ -234,7 +309,7 @@
             padding: 0px 15px;
             height: 50px;
             font-size: 14px;
-            color: #999999; 
+            color: #999999;
             font-family: $ral;
             @include placeholder{
                 font-size: 14px;
@@ -269,7 +344,7 @@
         }
         &:last-child{
             margin-bottom: 0px;
-            margin-top: 10px;  
+            margin-top: 10px;
         }
     }
 }
