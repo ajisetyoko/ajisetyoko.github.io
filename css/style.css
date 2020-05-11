@@ -366,7 +366,8 @@ body, p, h1, h2, h3, h4, h5, h6 {
 
 .social_icon li {
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
 .social_icon li a {
@@ -380,6 +381,8 @@ body, p, h1, h2, h3, h4, h5, h6 {
   border-radius: 5px;
   transition: all 400ms linear 0s;
   color: #677fb5;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .social_icon li:nth-child(2) a {
