@@ -99,7 +99,7 @@
                 margin: 0,
                 nav: true,
                 items: 1,
-                autoplay: false,
+                autoplay: true,
                 smartSpeed: 1500,
                 navContainer: '.blog2_slider_area',
                 navText: ['<i class="fa fa-long-arrow-left" aria-hidden="true"></i>','<i class="fa fa-long-arrow-right" aria-hidden="true"></i>']
