@@ -873,7 +873,10 @@ body, p, h1, h2, h3, h4, h5, h6 {
 }
 
 .portfolio_area .portfolio_list_inner .portfolio_item {
+  width: 300px;
+  height: 300px;
   margin-top: 40px;
+  margin-bottom: 80px;
 }
 
 .portfolio_area .portfolio_list_inner .portfolio_item .portfolio_img {
@@ -905,6 +908,10 @@ body, p, h1, h2, h3, h4, h5, h6 {
 
 .portfolio_area .portfolio_list_inner .portfolio_item .portfolio_img img {
   max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .portfolio_area .portfolio_list_inner .portfolio_item .portfolio_title {
