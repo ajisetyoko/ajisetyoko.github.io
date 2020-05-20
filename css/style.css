@@ -582,6 +582,49 @@ body, p, h1, h2, h3, h4, h5, h6 {
 ============================================================================================ */
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
+/* Experience CSS
+============================================================================================ */
+
+.card2 {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  height: auto;
+}
+.cards2 {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+}
+.card2 h4 {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #666666;
+  font-weight: bold;
+  padding-bottom: 1px;
+}
+.card2 h5 {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #666666;
+  font-weight: normal;
+  padding-bottom: 1px;
+}
+
+@media (min-width: 900px) {
+  .cards2 { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* @media (min-width: 900px) {
+  .cards2 { grid-template-columns: repeat(3, 1fr); }
+} */
+/* End Experience CSS
+============================================================================================ */
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
 /* Skill Area css
 ============================================================================================ */
 .myskill_area .skill_text {
