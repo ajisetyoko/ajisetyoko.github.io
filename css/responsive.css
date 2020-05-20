@@ -68,6 +68,10 @@
         max-width: 342px;
         margin: auto;
     }
+    .experience_area .experience_inner_area{
+        max-width: 315px;
+        margin: auto;
+    }
     .news_area .news_inner_area{
         max-width: 315px;
         margin: auto;
