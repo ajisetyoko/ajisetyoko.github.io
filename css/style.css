@@ -1422,9 +1422,14 @@ body, p, h1, h2, h3, h4, h5, h6 {
   margin-top: 10px;
 }
 
+.map {
+  height: 220px;
+  margin-top: 60px;
+}
+
 .mapBox {
   height: 220px;
-  margin-top: 60px !important;
+  margin-top: 220px !important;
 }
 
 /* End News area css
