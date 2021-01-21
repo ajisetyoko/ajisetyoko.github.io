@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+    <link rel="stylesheet" href="assets/css/html5-video.css">
+    <link rel="stylesheet" href="assets/css/Pretty-Footer.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/Video-Responsive.css">
+</head>
+
+<body>
+    <div class="container-fluid"
+        style="padding-top: 15px;padding-bottom: 15px;background-color: #3eae94;opacity: 1;filter: grayscale(0%) hue-rotate(0deg);">
+        <div class="row">
+            <div class="col">
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link active" href="#"
+                            style="font-size: 18px;color: rgb(0,0,0);"><strong><span id="my_name"></span></strong></a>
+                    </li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul
+                    class="nav text-right text-sm-right text-md-right text-lg-right text-xl-right d-xl-flex justify-content-xl-end">
+                    <li class="nav-item"><a class="nav-link active"
+                            href="https://ajisetyoko.github.io/portfolio/Portofolio%20Home.html"
+                            style="font-size: 18px;color: rgb(7,12,17);"><strong>Portofolio Home</strong></a></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"><a class="nav-link" href="https://ajisetyoko.github.io/"
+                            style="font-size: 18px;color: rgb(4,9,14);"><strong>Github Page</strong></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container d-xl-flex justify-content-xl-center" style="margin-bottom: 10px;margin-top: 15px;">
+        <h1 class="text-center text-sm-center text-md-center text-lg-center text-xl-center align-self-center"
+            style="max-width: 900px;margin: 0px;line-height: 55px;"><strong><span
+                    id="content_title"></span></strong><br></h1>
+    </div>
+    <div class="container d-xl-flex justify-content-xl-center" style="margin-bottom: 30px;margin-top: 22px;">
+        <h6 class="text-center text-sm-center text-md-center text-lg-center text-xl-center align-self-center"
+            style="max-width: 900px;margin: 0px;"><strong><span id="publisher"></span></strong><br></h6>
+    </div>
+    <div class="container d-xl-flex justify-content-xl-center">
+        <h6 class="text-center text-sm-center text-md-center text-lg-center text-xl-center align-self-center"
+            style="max-width: 1000px;margin: 0px;">
+            <a href="https://hendriktpl.github.io/">
+                <span id="author1" ></span>
+            </a>
+            <a href="https://ajisetyoko.github.io/">
+                <span id="author2" > </span>
+            </a>  
+            <a href="">
+                <span id="author3" > </span>
+            </a>  
+            <a href="">
+                <span id="author4" > </span>
+            </a>
+            <br>
+            <span id="afiliation"></span>
+            </h6>
+    </div>
+    <div class="container">
+        <figure class="figure"><img id="proposed_algorithm" class="img-fluid figure-img" src="">
+            <figcaption class="figure-caption">Proposed Method (Algorithm Flow)</figcaption>
+        </figure>
+    </div>
+    <div class="container">
+        <h3>Abstract</h3>
+        <p class="text-justify"><br>
+            <span id="abstract"></span>
+            &nbsp;<br><br>[<a id="link_code"
+                href=""><em><span
+                        style="text-decoration: underline;">Code</span></em></a>] [<a id="link_demo"
+                href=""><em><span
+                        style="text-decoration: underline;">Un-Official Paper</span></em></a>]<br><br></p>
+    </div>
+    <div>
+        <div class="container">
+            <h4 class="text-center"><strong>Conference Presentation</strong></h4> <br>
+            <!-- <div class="row" > -->
+            <div class="container d-xl-flex justify-content-xl-center">
+                <iframe id="link_presentation"
+                    src=""
+                    frameborder="0" width="576" height="342" allowfullscreen="true"
+                    mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                </iframe>
+            </div>
+        </div>
+    </div>
+    <footer style="background-color: #3eae94;"></footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        let my_name = "Aji Setyoko";
+        let content_title = "SNPE-SRGAN: Lightweight Generative Adversarial Networks for Single-Image Super-Resolution on Mobile Using SNPE Framework"
+        let publisher = "International Conference on Computing and Applied Informatics | 2020 "
+        let author1 = "Hendrik Tampubolon"+ "<sup>&#8727;</sup>" + ", ";
+        let author2 = "Aji Setyoko" + "<sup>&#8727;&#8727;</sup>"+ ", ";
+        let author3 = "Fanindia Purnamasar" + "<sup>&#8727;&#8727;&#8727;</sup>";
+        let author4 = "";
+        let afiliation = "<sup>&#8727;</sup>" + "Dept. of Information System, Faculty of Engineering and Computer Science, Krida Wacana Christian University, Indonesia" + "<br>" + "<sup>&#8727;&#8727;</sup>" + "National Taiwan Univeristy of Science and Technology, Taipei, Taiwan" + "<br>" + "<sup>&#8727;&#8727;&#8727;</sup>"+ "Department of Information Technology, University of Sumatera Utara, Medan, Indonesia" + "<br><br><br>"
+        let img_path = "assets/img/snpe_algo.png";
+        let abstract ="An image resulting from a low-resolution (LR) camera on the mobile phone has lower quality than a high-resolution(HR) camera on a DSLR. Meanwhile, the HR camera is pricing if compared with the LR camera. How to achieve a single-image quality on LR camera likewise on HR camera becomes essential research in the past years. Addressing this issue can be done by upscaling a single LR image. Recently, the super-resolution generative adversarial network (SRGAN) model is one of the state-of-the-art super-resolution(SR)models employed on single- image SR. However, implementing a deep learning model like SRGAN on a mobile device is challenging in computation power and resources. This study aims to develop a smaller and lower resources model while preserving single-image SR quality on mobile devices. To meet these objectives, we convert, quantize, and compress the SRGAN model on Snapdragon Neural Processing Engine (SNPE) as an example. We then validate the SRGAN on the DIV2K dataset on which improves the model performances. Besides, we conduct experiments on GPU, DSP environment. The experimental result confirmed that SNPE-SRGAN capable of achieves not only HR images' quality but also low latency by 0.06 second and smaller model by 1.7 Mb size running on DSP. Also, the SRGAN-DLC-Quantized running on GPU has a smaller size by 1.7 Mb and lower latency by 1.151 seconds compared with Non-quantized SRGAN-TensorFlow by 9.1 Mb and 1.608 seconds latency.";
+        let link_code = "https://gitlab.com/aji.setyoko/";
+        let link_demo = "assets/doc/snpe_unoficial.pdf";
+        let link_presentation = "https://docs.google.com/presentation/d/e/2PACX-1vTrXMTdUlRLKcYXV7DDdqxaQK5O3XoIfPn69TWYN1TSQjSBFeIux48qQwA9cgTi_g/embed?start=false&loop=false&delayms=3000";
+        let video_demo = "https://drive.google.com/file/d/1hgKdVnpK6c8OyLc5r8lJ1Fc2YSX-Dw50/";
+
+        document.getElementById('my_name').innerHTML = my_name;
+        document.getElementById('content_title').innerHTML = content_title;
+        document.getElementById('publisher').innerHTML = publisher;
+        document.getElementById('author1').innerHTML = author1;
+        document.getElementById('author2').innerHTML = author2;
+        document.getElementById('author3').innerHTML = author3;
+        document.getElementById('author4').innerHTML = author4;
+        document.getElementById('afiliation').innerHTML = afiliation;
+        var proposed_algorithm = document.getElementById("proposed_algorithm");
+        proposed_algorithm.src = img_path;
+        document.getElementById("abstract").innerHTML = abstract;
+        var link_cd = document.getElementById("link_code");
+        link_cd.href = link_code;
+        var link_dm = document.getElementById("link_demo");
+        link_dm.href = link_demo;
+
+        var link_presnt = document.getElementById("link_presentation");
+        link_presnt.src = link_presentation;
+
+        var link_video_demo = document.getElementById("video_demo");
+        link_video_demo.src = video_demo;
+
+    </script>
+</body>
+
+</html>
