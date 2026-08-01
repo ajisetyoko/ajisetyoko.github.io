@@ -1,0 +1,17 @@
+{{ define "main" }}
+<div class="prompt-line"><span class="dollar">$</span> ls {{ .Section }}/</div>
+<div class="output">
+  {{ if .Content }}<div class="section-intro">{{ .Content }}</div>{{ end }}
+  <ul class="listing">
+    {{ $pages := .Pages }}
+    {{ if eq .Section "posts" }}{{ $pages = .Pages.ByDate.Reverse }}{{ else }}{{ $pages = .Pages.ByTitle }}{{ end }}
+    {{ range $pages }}
+    <li>
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+      {{ if eq .Section "posts" }}<span class="dim"> — {{ .Date.Format "2006-01-02" }}</span>{{ end }}
+      {{ with .Params.summary }}<div class="dim listing-summary">{{ . }}</div>{{ end }}
+    </li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}

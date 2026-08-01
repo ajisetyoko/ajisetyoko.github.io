@@ -1,0 +1,45 @@
+baseURL = 'https://ajisetyoko.github.io/'
+languageCode = 'en-us'
+title = 'aji setyoko'
+theme = ''
+
+enableRobotsTXT = true
+paginate = 10
+
+[params]
+  author = "Aji Setyoko"
+  tagline = "Senior SRE / Senior TPM / CASP+"
+  githubURL = "https://github.com/ajisetyoko"
+  gitlabURL = "https://gitlab.com/aji.setyoko"
+  linkedinURL = "https://www.linkedin.com/in/aji-setyoko/"
+  email = "aji.setyoko@gmail.com"
+
+[markup]
+  [markup.highlight]
+    style = "monokai"
+    lineNos = false
+    codeFences = true
+  [markup.goldmark.renderer]
+    unsafe = true
+
+[menu]
+  [[menu.main]]
+    name = "about"
+    url = "/about/"
+    weight = 10
+  [[menu.main]]
+    name = "projects"
+    url = "/projects/"
+    weight = 20
+  [[menu.main]]
+    name = "publications"
+    url = "/publications/"
+    weight = 30
+  [[menu.main]]
+    name = "blog"
+    url = "/posts/"
+    weight = 40
+  [[menu.main]]
+    name = "contact"
+    url = "/contact/"
+    weight = 50
