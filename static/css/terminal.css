@@ -152,6 +152,29 @@ a:hover { text-decoration: none; }
 }
 .page ul, .page ol { padding-left: 1.4rem; }
 .page .meta { color: var(--dim); margin-top: -0.5rem; }
+.page table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.2rem 0;
+  font-size: 0.9rem;
+  /* display:block so a wide table scrolls itself; goldmark emits no wrapper,
+     and Hugo's table render hook needs 0.134+ (CI is pinned to 0.133.0). */
+  display: block;
+  overflow-x: auto;
+}
+.page th, .page td {
+  border: 1px solid var(--border);
+  padding: 0.4rem 0.7rem;
+  text-align: left;
+  vertical-align: top;
+}
+.page th {
+  background: var(--bg-alt);
+  color: var(--accent-2);
+  font-weight: normal;
+  white-space: nowrap;
+}
+.page tbody tr:nth-child(even) { background: rgba(255, 255, 255, 0.02); }
 
 .term-form {
   display: flex;
