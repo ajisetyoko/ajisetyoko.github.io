@@ -1,7 +1,6 @@
 baseURL = 'https://ajisetyoko.github.io/'
 languageCode = 'en-us'
 title = 'aji setyoko'
-theme = ''
 
 enableRobotsTXT = true
 paginate = 10
