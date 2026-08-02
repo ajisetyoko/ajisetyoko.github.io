@@ -5,4 +5,4 @@ summary: "Action recognition for two-person interactions via graph convolution o
 
 Extends skeleton-based graph convolution action recognition to two-person interaction scenarios.
 
-[Code on GitHub](https://github.com/ajisetyoko/mutual-action)
+[Code on GitHub](https://github.com/ajisetyoko/mutual-action) · [Paper (ICIP 2020)](/publications/icip-2020/)
