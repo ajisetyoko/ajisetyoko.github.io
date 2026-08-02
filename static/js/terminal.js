@@ -55,10 +55,34 @@
     }).join("  ");
   }
 
+  function buildTree() {
+    var nav = navLinks();
+    var labels = Object.keys(nav);
+    var lines = ["~"];
+    labels.forEach(function (label, i) {
+      var href = nav[label];
+      var isLastTop = i === labels.length - 1;
+      var branch = isLastTop ? "└── " : "├── ";
+      if (!isSectionHref(href)) {
+        lines.push(branch + label);
+        return;
+      }
+      lines.push(branch + label + "/");
+      var section = slug(href);
+      var children = pages.filter(function (p) { return p.kind === "page" && p.section === section; });
+      var prefix = isLastTop ? "    " : "│   ";
+      children.forEach(function (p, j) {
+        var isLastChild = j === children.length - 1;
+        lines.push(prefix + (isLastChild ? "└── " : "├── ") + slug(p.url));
+      });
+    });
+    return lines;
+  }
+
   function completions(prefix) {
     if (!prefix) return [];
     prefix = prefix.toLowerCase();
-    var words = ["help", "clear", "ls", "cd", "cat"].concat(Object.keys(navLinks()));
+    var words = ["help", "clear", "ls", "cd", "cat", "pwd", "tree"].concat(Object.keys(navLinks()));
     pages.forEach(function (p) { if (p.kind === "page") words.push(slug(p.url)); });
     var seen = {};
     var uniq = [];
@@ -292,8 +316,16 @@
 
     switch (cmd) {
       case "help":
-        bashPrintln("commands:  ls [dir]   cd [dir|..|~|home]   cat <file>   clear   help  (Tab completes, gg/G/j/k scroll)");
+        bashPrintln("commands:  ls [dir]   cd [dir|..|~|home]   cat <file>   pwd   tree   clear   help  (Tab completes, gg/G/j/k scroll)");
         bashPrintln("home:  " + topLevelListing());
+        break;
+
+      case "pwd":
+        bashPrintln(window.location.pathname);
+        break;
+
+      case "tree":
+        buildTree().forEach(function (line) { bashPrintln(line); });
         break;
 
       case "clear":
@@ -324,7 +356,7 @@
         if (!arg || arg === "~" || arg === "home") { window.location.href = "/"; break; }
         if (arg === "..") {
           var current = pages.find(function (p) { return p.url === window.location.pathname; });
-          if (current && current.section) {
+          if (current && current.kind === "page" && current.section) {
             var sectionPage = pages.find(function (p) { return p.kind === "section" && p.section === current.section; });
             window.location.href = sectionPage ? sectionPage.url : "/";
           } else {

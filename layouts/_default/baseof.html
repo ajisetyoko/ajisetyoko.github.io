@@ -6,7 +6,7 @@
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
   {{ with .Description | default .Site.Params.tagline }}<meta name="description" content="{{ . }}">{{ end }}
   <link rel="icon" href="data:,">
-  <link rel="stylesheet" href="{{ "css/terminal.css" | relURL }}">
+  <link rel="stylesheet" href="{{ "css/terminal.css" | relURL }}?v={{ now.Unix }}">
   <script>document.documentElement.dataset.mode = localStorage.getItem("termMode") || "default";</script>
 </head>
 <body>
@@ -26,6 +26,6 @@
   </div>
   {{ partial "cli.html" . }}
   <script>window.SITE_INDEX_URL = "{{ "index.json" | relURL }}";</script>
-  <script src="{{ "js/terminal.js" | relURL }}" defer></script>
+  <script src="{{ "js/terminal.js" | relURL }}?v={{ now.Unix }}" defer></script>
 </body>
 </html>
