@@ -21,6 +21,8 @@ html, body {
   line-height: 1.6;
 }
 
+:root[data-mode="vim"] body { padding-bottom: 3.2rem; }
+
 .term {
   max-width: 860px;
   margin: 2rem auto;
@@ -85,6 +87,27 @@ html, body {
   border-bottom: 1px solid var(--accent-2);
 }
 
+.mode-toggle {
+  display: flex;
+  gap: 0.4rem;
+}
+.mode-toggle button {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--dim);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.mode-toggle button:hover { color: var(--fg); }
+[data-mode="vim"] .mode-toggle button[data-mode-btn="vim"],
+[data-mode="default"] .mode-toggle button[data-mode-btn="default"] {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
 .prompt-line {
   color: var(--fg);
   margin: 1.4rem 0 0.4rem;
@@ -98,14 +121,6 @@ html, body {
 .output.banner { font-size: 1.1rem; }
 .output.page h1 { margin-top: 0; }
 .dim { color: var(--dim); }
-
-.cursor {
-  display: inline-block;
-  width: 8px;
-  background: var(--accent);
-  animation: blink 1s steps(1) infinite;
-}
-@keyframes blink { 50% { background: transparent; } }
 
 a { color: var(--accent-2); }
 a:hover { text-decoration: none; }
@@ -174,6 +189,95 @@ a:hover { text-decoration: none; }
 }
 .term-form button:hover { background: var(--accent); color: var(--bg); }
 
+.term-cli {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px dashed var(--border);
+}
+.term-cli-output {
+  max-height: 260px;
+  overflow-y: auto;
+  margin-bottom: 0.4rem;
+}
+.cli-out-line { white-space: pre-wrap; word-break: break-word; }
+.cli-out-line.cli-echo { color: var(--dim); }
+.term-cli-line {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.term-cli-line .dollar { color: var(--accent); }
+.term-cli-typebox {
+  position: relative;
+  flex: 1;
+}
+#term-cli-input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--fg);
+  font-family: var(--font-mono);
+  font-size: inherit;
+  caret-color: transparent;
+}
+.block-cursor {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 0.6em;
+  background: var(--accent);
+  animation: blink 1s steps(1) infinite;
+  display: none;
+  pointer-events: none;
+}
+.term-cli-typebox.focused .block-cursor { display: block; }
+@keyframes blink { 50% { background: transparent; } }
+
+[data-mode="vim"] .term-cli { display: none; }
+[data-mode="default"] .vim-bar { display: none; }
+
+.vim-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  background: var(--bg-alt);
+  border-top: 1px solid var(--border);
+  font-size: 0.85rem;
+}
+.vim-statusline {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25rem 0.9rem;
+  background: var(--border);
+  color: var(--bg);
+  font-weight: bold;
+}
+#vim-mode.mode-command { color: var(--accent-2); }
+.vim-cmdline {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.3rem 0.9rem;
+  min-height: 1.6rem;
+}
+#vim-message { color: var(--dim); flex: 1; white-space: pre-wrap; word-break: break-word; }
+#vim-input {
+  flex: 1;
+  display: none;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--fg);
+  font-family: var(--font-mono);
+  font-size: inherit;
+  caret-color: var(--accent);
+}
+#vim-input.active { display: block; }
+
 .term-footer {
   margin-top: 2rem;
   padding-top: 1rem;
@@ -191,4 +295,6 @@ a:hover { text-decoration: none; }
   .term { margin: 0; border: none; border-radius: 0; }
   .term-body { padding: 1.25rem; }
   .prompt-nav a { margin-left: 0; margin-right: 1rem; display: inline-block; }
+  .vim-statusline { font-size: 0.75rem; }
+  #vim-path { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 55vw; }
 }

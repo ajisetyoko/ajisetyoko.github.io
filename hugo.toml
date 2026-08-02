@@ -6,6 +6,9 @@ theme = ''
 enableRobotsTXT = true
 paginate = 10
 
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
 [params]
   author = "Aji Setyoko"
   tagline = "Senior SRE / Senior TPM / CASP+"

@@ -5,4 +5,8 @@
     <a href="{{ .URL | relLangURL }}"{{ if $.IsMenuCurrent "main" . }} class="active"{{ end }}>{{ .Name }}</a>
     {{ end }}
   </nav>
+  <div class="mode-toggle" role="group" aria-label="command bar mode">
+    <button type="button" data-mode-btn="vim">vim</button>
+    <button type="button" data-mode-btn="default">default</button>
+  </div>
 </header>
