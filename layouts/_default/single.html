@@ -1,0 +1,14 @@
+{{ define "main" }}
+<div class="prompt-line"><span class="dollar">$</span> cat {{ .File.ContentBaseName }}.md</div>
+<article class="output page">
+  <h1>{{ .Title }}</h1>
+  {{ if eq .Section "posts" }}
+  <p class="meta">{{ .Date.Format "2006-01-02" }}{{ with .Params.tags }} · {{ delimit . ", " }}{{ end }}</p>
+  {{ end }}
+  {{ .Content }}
+</article>
+{{ if ne .Section "" }}
+<div class="prompt-line"><span class="dollar">$</span> cd ..</div>
+<div class="output"><a href="{{ .Parent.Permalink | default (printf "/%s/" .Section) }}">&larr; back to {{ .Section }}</a></div>
+{{ end }}
+{{ end }}

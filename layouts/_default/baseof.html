@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
+  {{ with .Description | default .Site.Params.tagline }}<meta name="description" content="{{ . }}">{{ end }}
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="{{ "css/terminal.css" | relURL }}?v={{ now.Unix }}">
+  <script>document.documentElement.dataset.mode = localStorage.getItem("termMode") || "default";</script>
+</head>
+<body>
+  <div class="term">
+    <div class="term-bar">
+      <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+      <span class="term-title">visitor@ajisetyoko:~</span>
+    </div>
+    <div class="term-body">
+      {{ partial "header.html" . }}
+      <main>
+        {{ block "main" . }}{{ end }}
+      </main>
+      {{ partial "cli-default.html" . }}
+      {{ partial "footer.html" . }}
+    </div>
+  </div>
+  {{ partial "cli.html" . }}
+  <script>window.SITE_INDEX_URL = "{{ "index.json" | relURL }}";</script>
+  <script src="{{ "js/terminal.js" | relURL }}?v={{ now.Unix }}" defer></script>
+</body>
+</html>

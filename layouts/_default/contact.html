@@ -1,0 +1,31 @@
+{{ define "main" }}
+<div class="prompt-line"><span class="dollar">$</span> cat contact.md</div>
+<article class="output page">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+</article>
+
+<div class="prompt-line"><span class="dollar">$</span> mail -s "hello" {{ .Site.Params.email }}</div>
+<div class="output">
+  <!--
+    Sign up at https://formspree.io, create a form, and replace
+    PLACEHOLDER below with your real form ID (e.g. https://formspree.io/f/abcdwxyz).
+    Until then this form will not deliver anywhere.
+  -->
+  <form class="term-form" action="https://formspree.io/f/PLACEHOLDER" method="POST">
+    <label for="name">name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">email</label>
+    <input type="email" id="email" name="_replyto" required>
+
+    <label for="subject">subject</label>
+    <input type="text" id="subject" name="subject">
+
+    <label for="message">message</label>
+    <textarea id="message" name="message" rows="6" required></textarea>
+
+    <button type="submit">$ send</button>
+  </form>
+</div>
+{{ end }}

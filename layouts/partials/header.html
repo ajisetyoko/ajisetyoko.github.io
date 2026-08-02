@@ -1,0 +1,12 @@
+<header class="term-header">
+  <a class="prompt-home" href="{{ "/" | relLangURL }}">visitor@ajisetyoko<span class="colon">:</span><span class="path">~</span><span class="dollar">$</span></a>
+  <nav class="prompt-nav">
+    {{ range .Site.Menus.main }}
+    <a href="{{ .URL | relLangURL }}"{{ if $.IsMenuCurrent "main" . }} class="active"{{ end }}>{{ .Name }}</a>
+    {{ end }}
+  </nav>
+  <div class="mode-toggle" role="group" aria-label="command bar mode">
+    <button type="button" data-mode-btn="vim">vim</button>
+    <button type="button" data-mode-btn="default">default</button>
+  </div>
+</header>

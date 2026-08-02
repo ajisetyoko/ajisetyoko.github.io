@@ -1,0 +1,12 @@
+{{ define "main" }}
+<div class="prompt-line"><span class="dollar">$</span> whoami</div>
+<div class="output banner">{{ .Site.Params.author }} <span class="dim">— {{ .Site.Params.tagline }}</span></div>
+
+<div class="prompt-line"><span class="dollar">$</span> cat intro.md</div>
+<div class="output">{{ .Content }}</div>
+
+<div class="prompt-line"><span class="dollar">$</span> ls ~</div>
+<div class="output">
+  <a href="/about/">about/</a>&nbsp; <a href="/projects/">projects/</a>&nbsp; <a href="/publications/">publications/</a>&nbsp; <a href="/posts/">posts/</a>&nbsp; <a href="/contact/">contact/</a>
+</div>
+{{ end }}
