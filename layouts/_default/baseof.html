@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
   {{ with .Description | default .Site.Params.tagline }}<meta name="description" content="{{ . }}">{{ end }}
-  <link rel="icon" href="data:,">
+  <link rel="icon" type="image/svg+xml" href="{{ "favicon.svg" | relURL }}">
   <link rel="stylesheet" href="{{ "css/terminal.css" | relURL }}?v={{ now.Unix }}">
   <script>document.documentElement.dataset.mode = localStorage.getItem("termMode") || "default";</script>
 </head>
