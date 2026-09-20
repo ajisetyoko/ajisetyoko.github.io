@@ -4,7 +4,7 @@ title: "about"
 
 ## whoami
 
-Aji Setyoko — Senior Site Reliability Engineer, Senior Technical Program Manager, CompTIA CASP+ certified. Based in Taipei, Taiwan.
+Aji Setyoko — Senior Site Reliability Engineer, Senior Technical Program Manager, CompTIA SecurityX (formerly CASP+) certified. Based in Taipei, Taiwan.
 
 [Download résumé (PDF)](/files/resume.pdf)
 
@@ -31,7 +31,8 @@ Electric inverter research under faculty supervision, focused on electrical sche
 
 ## certifications.log
 
-- **CompTIA CASP+ (Advanced Security Practitioner)**
+- [**CompTIA SecurityX ce**](https://www.credly.com/badges/cd90bc95-4142-4db7-a13a-c36aa8c1d530) (formerly CASP+, Advanced Security Practitioner) — enterprise security architecture, senior security engineering across cloud/on-prem/hybrid, governance, risk & compliance
+- [**KCNA: Kubernetes and Cloud Native Associate**](https://www.credly.com/badges/6f827b16-9dc7-4bb8-8115-9224197c306a) (The Linux Foundation) — Kubernetes architecture, kubectl, the cloud-native landscape, GitOps & service mesh, cloud-native security · *expired*
 - [**TensorFlow Developer Certificate**](https://www.credential.net/5c2fb584-6d99-43ef-9df2-88b9ad2e6dbb) — ML/DL foundations, TensorFlow 2.x, CNNs, image recognition & object detection
 - [**TensorFlow in Practice Specialization**](https://www.coursera.org/account/accomplishments/specialization/certificate/SDAJP36MUDL4) (Coursera/deeplearning.ai) — 4 courses covering intro to TensorFlow, CNNs, NLP, and time series
 - **Advanced Machine Learning with TensorFlow on GCP Specialization** (Coursera) — 5 courses covering end-to-end ML, production systems, image understanding, sequence models, and recommendation systems
@@ -40,7 +41,7 @@ Electric inverter research under faculty supervision, focused on electrical sche
 
 **Reliability / Platform:** incident response, observability, on-call practice, cloud infrastructure, program management for cross-team engineering initiatives
 
-**Security:** CASP+ scope — enterprise security architecture, risk management, security engineering & operations
+**Security:** SecurityX (CASP+) scope — enterprise security architecture, risk management, security engineering & operations
 
 **Languages:** Python, MATLAB, C, Java, PHP/MySQL, HTML/CSS
 
