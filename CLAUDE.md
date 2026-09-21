@@ -51,7 +51,7 @@ static/
 ## The theme
 
 Hand-built, deliberately. There is **no `theme` setting in hugo.toml** — an empty
-`theme = ''` previously broke the CI build (commit `6cd7f21`). Don't add one back.
+`theme = ''` previously broke the CI build (commit `f4d2658`). Don't add one back.
 
 Everything renders inside a fake terminal window (`.term` → `.term-bar` + `.term-body`).
 Templates lead sections with a fake shell prompt line, e.g. `$ ls posts/` on list pages
