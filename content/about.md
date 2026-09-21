@@ -6,7 +6,7 @@ title: "about"
 
 Aji Setyoko — Senior Site Reliability Engineer, Senior Technical Program Manager, CompTIA SecurityX (formerly CASP+) certified. Based in Taipei, Taiwan.
 
-[Download résumé (PDF)](/files/resume.pdf)
+Résumé available on request — [get in touch](/contact/).
 
 ## experience.log
 

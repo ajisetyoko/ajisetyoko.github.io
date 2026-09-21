@@ -44,7 +44,7 @@ layouts/             the theme — hand-written, no external theme module
 static/
   css/terminal.css   the entire stylesheet, 300 lines, no preprocessor
   js/terminal.js     the interactive command bar
-  files/             PDFs (resume, papers)
+  files/             PDFs (papers)
   images/, favicon.svg
 ```
 
