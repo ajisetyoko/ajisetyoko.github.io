@@ -32,6 +32,7 @@ Electric inverter research under faculty supervision, focused on electrical sche
 ## certifications.log
 
 - [**CompTIA SecurityX ce**](https://www.credly.com/badges/cd90bc95-4142-4db7-a13a-c36aa8c1d530) (formerly CASP+, Advanced Security Practitioner) — enterprise security architecture, senior security engineering across cloud/on-prem/hybrid, governance, risk & compliance
+- [**New Relic Certified APM Practitioner – Associate (APA)**](https://credentials.newrelic.com/a4fd62e3-e65d-4dfa-add6-cc8302ec8107) (New Relic, 2026) — application performance monitoring fundamentals, performance analysis, triage & troubleshooting, full-stack observability practices
 - [**KCNA: Kubernetes and Cloud Native Associate**](https://www.credly.com/badges/6f827b16-9dc7-4bb8-8115-9224197c306a) (The Linux Foundation) — Kubernetes architecture, kubectl, the cloud-native landscape, GitOps & service mesh, cloud-native security · *expired*
 - [**TensorFlow Developer Certificate**](https://www.credential.net/5c2fb584-6d99-43ef-9df2-88b9ad2e6dbb) — ML/DL foundations, TensorFlow 2.x, CNNs, image recognition & object detection
 - [**TensorFlow in Practice Specialization**](https://www.coursera.org/account/accomplishments/specialization/certificate/SDAJP36MUDL4) (Coursera/deeplearning.ai) — 4 courses covering intro to TensorFlow, CNNs, NLP, and time series
