@@ -270,3 +270,7 @@ during a failover.** Hybrid trades a little resilience for a lot of savings. Mak
 that trade is a decision, not a surprise.
 
 If neither applies, stay all-cloud.
+
+---
+
+Also published on [Beyond Localhost →](https://medium.com/beyond-localhost/your-office-gpu-in-production-eks-hybrid-nodes-wireguard-and-cloud-failover-d32d38b6d6a2)
